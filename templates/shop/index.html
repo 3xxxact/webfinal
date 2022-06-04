@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Sneakers Look</title>
+    <link rel="SHORTCUT ICON" href="img\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../static/style.css">
+    <link href="../../static/css/base/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+    <script src="../../static/js/jquery-1.8.3.js"></script>
+    <script src="../../static/js/jquery-ui-1.9.2.custom.js"></script>
+    
+</head>
+<body>
+<div id="cart_box" class="anime">
+   <div class="title_cart">
+     <p>МОЯ КОРЗИНА</p>
+     <img src="../../static/img/next.png">
+   </div>
+   <p>Общая сумма: <span class='price_total'>0</span></p>
+   <div class="content_cart"></div>
+   <div id="order" class="btn anime">
+     ЗАКАЗАТЬ
+     <img src="../../static/img/cart.png">
+   </div>
+</div>
+
+
+<header class="dark">
+  <div id="top"class="wrap">
+          <div>
+            <button class="btn"><a href="{% url 'login' %}">Login</a></button>
+          </div>
+          <div>
+            <button class="btn"><a href="{% url 'signup' %}">Signup</a></button>
+          </div>
+          <div id="location">
+                Buy what?
+                <h3>sneakers</h3>
+          </div>
+          <div id="logo">
+              <a href="#"> Fashion look </a>
+          </div>
+          <div id="currency">
+                where?
+                <h3>Here!</h3>
+          </div>
+          <div id="cart" class="btn anime">
+                <p class="counter"></p>
+                <img src="../../static/img/2.png">
+                КОРЗИНА
+          </div>
+    </div>
+    <div id="menu" class="wrap">
+       <nav id="main_nav">
+         <li><a href="#" class="anime">NEW BALANCE</a></li>
+         <li><a href="#"class="anime">JORDAN </a></li>
+         <li><a href="#"class="anime">ADIDAS</a></li>
+         <li><a href="#"class="anime">ASICS </a></li>
+         <li><a href="#"class="anime">UA </a></li>
+         <li><a href="#"class="anime">REEBOK</a></li>
+         <li><a href="#"class="anime">NIKE</a></li>
+         <li><a href="#"class="anime">PUMA</a></li>
+         <li><a href="#"class="anime">BALENCIAGA</a></li>
+       </nav>
+     </div>
+   </div>
+</header>
+<div id="banner">
+  <img src="../../static/img/main1.jpg">
+</div>
+<main class="wrap">
+     <div id="leftbar">
+        <div id='category' class="box">
+            <div class="list_box">
+              <div class="title_box">
+                <p>БЕГОВЫЕ</p>
+                <img src="../../static/img/4.png">
+              </div>
+              <div class="list_link">
+                 <nav>
+                   <li><a href="#" class="anime">Nike Air Zoom Alphafly NEXT%</a></li>
+                   <li><a href="#"class="anime">New Balance Fresh Foam 1080</a></li>
+                   <li><a href="#"class="anime">adidas ClimaWarm Bounce</a></li>
+                 </nav>
+              </div>
+            </div>
+            <div class="list_box">
+                <div class="title_box">
+                  <p>БАСКЕТБОЛЬНЫЕ</p>
+                  <img src="../../static/img/4.png">
+                </div>
+                <div class="list_link">
+                   <nav>
+                     <li><a href="#" class="anime">Air Jordan 5 «Oregon»</a></li>
+                     <li><a href="#"class="anime">Reebok Shaqnosis x Minions «Shaq-Fu»</a></li>
+                     <li><a href="#"class="anime">adidas by Pharrell Williams Crazy BYW LVL</a></li>
+                   </nav>
+                </div>
+              </div>
+              <div class="list_box">
+                  <div class="title_box">
+                    <p>ФУТБОЛЬНЫЕ</p>
+                    <img src="../../static/img/4.png">
+                  </div>
+                  <div class="list_link">
+                     <nav>
+                       <li><a href="#" class="anime">adidas Copa 20</a></li>
+                       <li><a href="#"class="anime">adidas Mundial Team</a></li>
+                       <li><a href="#"class="anime">Nike Mercurial Superfly 7 Elite IC</a></li>
+                     </nav>
+                  </div>
+                </div>
+                <div class="list_box">
+                    <div class="title_box">
+                      <p>ПОВСЕДНЕВНЫЕ</p>
+                      <img src="../../static/img/4.png">
+                    </div>
+                    <div class="list_link">
+                       <nav>
+                         <li><a href="#" class="anime">Hoka One One</a></li>
+                         <li><a href="#"class="anime">New Balance 327</a></li>
+                         <li><a href="#"class="anime">Alexander McQueen</a></li>
+                       </nav>
+                    </div>
+                  </div>
+            <div class="list_box">
+                    <div class="title_box">
+                      <p>ТЕННИСНЫЕ</p>
+                      <img src="../../static/img/4.png">
+                    </div>
+                    <div class="list_link">
+                       <nav>
+                         <li><a href="#" class="anime">Wilson</a></li>
+                         <li><a href="#"class="anime">Nike Air Tech Challenge 2</a></li>
+                         <li><a href="#"class="anime">ASICS Gel-Resolution 8</a></li>
+                       </nav>
+                    </div>
+                  </div>
+            <div class="list_box">
+                    <div class="title_box">
+                      <p>СКЕЙТЕРСКИЕ</p>
+                      <img src="../../static/img/4.png">
+                    </div>
+                    <div class="list_link">
+                       <nav>
+                         <li><a href="#" class="anime">Vans SK8-Hi x Simpsons</a></li>
+                         <li><a href="#"class="anime">Osiris D3</a></li>
+                         <li><a href="#"class="anime">DC Shoes Infinite S</a></li>
+                       </nav>
+                    </div>
+                  </div>
+        </div>
+      <div class="filter_box box">
+           <div class="title_filter">
+              <p>РАЗМЕРЫ</p>
+           </div>
+           <div class="content_filter">
+              <ul class="list_filter">
+                <li><input id="size1" type="checkbox"><label for="size1">XS</label></li>
+                <li><input checked id="size2" type="checkbox"><label for="size2">S</label></li>
+                <li><input id="size3" type="checkbox"><label for="size3">M</label></li>
+                <li><input id="size4" type="checkbox"><label for="size4">L</label></li>
+                <li><input id="size5" type="checkbox"><label for="size5">XL</label></li>
+              </ul>
+           </div>
+        </div>
+        <div class="filter_box box">
+            <div class="title_filter">
+               <p>ЦЕНА</p>
+            </div>
+            <div class="content_filter">
+              <div id="slider_price"></div>
+              <div class="price_box">
+                  <input type="text" name="minPrice">
+                  <input type="text" name="maxPrice">
+              </div>
+            </div>
+        </div>
+      </div>
+     <div id="rightbar">
+        <div class="list_product">
+               <a class="product box anime">
+                <div class="img_product">
+                  <img src="../../static/img/a1.jpg" alt="">
+                </div>
+                <h2>Nike React Infinity Run Flyknit</h2>
+                <p class="price">$290</p>
+                <button class="btn">Добавить в корзину</button>
+              </a>
+              <a class="product box anime">
+                <div class="tag box">NEW</div>
+                <div class="img_product">
+                  <img src="../../static/img/a2.jpg" alt="">
+                </div>
+                <h2>Air Jordan 32 Infrared</h2>
+                <p class="price">$350</p>
+                <button class="btn">Добавить в корзину</button>
+              </a>
+            <a class="product box anime">
+                <div class="img_product">
+                  <img src="../../static/img/a3.jpeg" alt="">
+                </div>
+                <h2>adidas Predator 20.3 FG</h2>
+                <p class="price">$270</p>
+                <button class="btn">Добавить в корзину</button>
+            </a>
+            <a class="product box anime">
+                <div class="tag box">NEW</div>
+                <div class="img_product">
+                  <img src="../../static/img/a4.jpg" alt="">
+                </div>
+                <h2>ASICS Gel Resolution 8</h2>
+                <p class="price">$180</p>
+                <button class="btn">Добавить в корзину</button>
+            </a>
+            <a class="product box anime">
+                <div class="img_product">
+                  <img src="../../static/img/a5.jpg" alt="">
+                </div>
+                <h2>Reebok Zpump Fusion 2.5</h2>
+                <p class="price">$220</p>
+                <button class="btn">Добавить в корзину</button>
+            </a>
+            <a class="product box anime ">
+                <div class="img_product">
+                  <img src="../../static/img/a6.jpg" alt="">
+                </div>
+                <h2>Salomon X Ultra 3 GTXo</h2>
+                <p class="price">$290</p>
+                <button class="btn">Добавить в корзину</button>
+            </a>
+</main>
+<footer>
+    <p>© 2022 Rights nod reserved</p>
+
+</footer>
+<script src="../../static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Sneakers Look</title>
+    <link rel="SHORTCUT ICON" href="img\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="../../static/css/base/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+    <script src="../../static/js/jquery-1.8.3.js"></script>
+    <script src="../../static/js/jquery-ui-1.9.2.custom.js"></script>
+    
+</head>
+<body>
+    <div class="container mt-5">
+       <form method="post">
+        {% csrf_token %}
+            <div class="mb-3" style="width: 50%;">
+                <label class="form-label" for="inputEmail" >Email</label>
+                <input name="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="mb-3" style="width: 50%;">
+                <label class="form-label" for="inputPassword">Password</label>
+                <input name='password' class="form-control" placeholder="Password">
+            </div>
+            <div>
+                {% if wrong_auth_cred %}
+            <span >
+                Wrong email or password
+            </span>
+            {% else %}
+            <span></span>
+            {% endif %}
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Sign in</button>
+    </form> 
+    </div>
+
+</body>
+</html>
